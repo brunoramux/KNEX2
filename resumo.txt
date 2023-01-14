@@ -1,0 +1,26 @@
+INSTALAR NODE
+
+INSTALAR POSTGRES
+USAMOS O DOCKER E O DBEAVER
+
+Intalar nodemon
+
+Instalar knex, Postgre e express
+npm install knex pg express nodemon
+
+Atentar para a configuracao correta do package.json
+
+Comando npx knex init //inicia o knex no projeto e cria o arquivo knexfile.js
+
+Configurar o arquivo knexfile.js
+
+Configurar arquivo index.js dentro de database
+
+Criar as migrations. Usado para criar tabelas, adicionar ou remover colunas, etc
+
+npx knex migrate:make create_table_users
+
+npx knex migrate:latest //comando para rodar a migration e fazer o que ela deve fazer
+
+npx knex seed:make 001_users //cria estrutura de seeds
+npx knex seed:run //rodar o seed
